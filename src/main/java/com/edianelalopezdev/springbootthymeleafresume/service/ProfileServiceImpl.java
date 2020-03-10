@@ -38,10 +38,10 @@ public class ProfileServiceImpl implements ProfileService {
         if (_profile.isPresent()) {
             profile.setId(_profile.get().getId());
             profileGateway.createOrUpdateProfile(profile);
-            return "add-profile";
+            return "view-profile";
         }
 
         profileGateway.createOrUpdateProfile(profile);
-        return "add-profile";
+        return "view-profile";
     }
 }
