@@ -11,14 +11,18 @@
 <body>
 
 <div class="container">
+    <div class="row">
+        <div class="card mt-5" style="height: 842px; width: 592px;">
+            <div class="card-body">
 
-    <img src="../static/images/2x2.jpg" th:src="@{images/2x2.jpg}"/>
+                <img src="../static/images/2x2.jpg" th:src="@{images/2x2.jpg}" width="135px;"/>
 
-    <tr th:each="obj : ${profile}">
-        <td th:text="${profile.firstName}"></td>
-    </tr>
-
-
+                <tr th:each="obj : ${profile}">
+                    <td th:text="${profile.firstName}"></td>
+                </tr>
+            </div>
+        </div>
+    </div>
 </div>
 <script type="text/javascript" th:src="@{webjars/bootstrap/4.2.1/js/bootstrap.min.js}"></script>
 </body>
